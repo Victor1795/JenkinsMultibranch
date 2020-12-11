@@ -16,7 +16,7 @@ pipeline {
 	            environment name: 'EXECUTE', value: 'True'
 		}
 		steps {
-	   	    script {
+	   	    sh {
 	                "echo Updating Second Stage"
 		    }
 		}
