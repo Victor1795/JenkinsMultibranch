@@ -6,7 +6,7 @@ pipeline {
 	   	        script {
 		            env.EXECUTE='True'
 		        }
-                sh echo "Step One"
+                sh 'echo "Step One"'
 		        }     
 		    }
             stage('Second') {
