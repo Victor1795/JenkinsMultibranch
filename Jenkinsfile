@@ -4,7 +4,7 @@ pipeline {
             stage('First') {
 	        steps {
 	   	    script {
-		        env.EXECUTE="True"
+		        env.EXECUTE=True
 		    }
 		}
                 steps {
@@ -15,7 +15,7 @@ pipeline {
 	        when { environment name: 'Execute', value: 'True'}
 		steps {
 	   	    script {
-	                echo "Updating Second Stage"
+	                "echo Updating Second Stage"
 		    }
 		}
 		steps {
